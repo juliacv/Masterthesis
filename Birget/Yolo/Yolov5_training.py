@@ -51,9 +51,9 @@ new_file.close()
 
 
 #Set up yolov5
-#call(["git", "clone", "https://github.com/ultralytics/yolov5"])
-#os.chdir("/Home/siv31/jng001/Master_Julia/yolov5")
-#call([sys.executable, "-m", "pip", "install", "-qr", "/Home/siv31/jng001/Master_Julia/yolov5/requirements.txt"])
+call(["git", "clone", "https://github.com/ultralytics/yolov5"])
+os.chdir("/Home/siv31/jng001/Master_Julia/yolov5")
+call([sys.executable, "-m", "pip", "install", "-qr", "/Home/siv31/jng001/Master_Julia/yolov5/requirements.txt"])
 
 import utils
 # Set device
