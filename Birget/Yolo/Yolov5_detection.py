@@ -28,7 +28,7 @@ exp_best = exp[3]
 
 
 print("Detection on the test set")
-call(["python", "/Home/siv31/jng001/Master_Julia/yolov5/detect.py", "--weights", f"{path}", "--img", "640", "--conf", "0.25", "--source", "/Home/siv31/jng001/Master_Julia/datasets/Request_da_2/images/val", "--project", f"yolov5/{save_dir}/detect", "--name", "detect", "--save-conf", "--save-txt"])
+call(["python", "/Home/siv31/jng001/Master_Julia/yolov5/detect.py", "--weights", f"{path}", "--img", "640", "--conf", "0.25", "--source", "/Home/siv31/jng001/Master_Julia/datasets/Request_da_2/images/val", "--data","/Home/siv31/jng001/Master_Julia/yolov5/data/request_1.yaml", "--project", f"yolov5/{save_dir}/detect", "--name", "detect", "--save-conf", "--save-txt"])
 
 
 #Save weights used for detection and validation results
