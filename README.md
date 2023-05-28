@@ -1,11 +1,10 @@
 # Master thesis
-Code and examples for Julia Nguyen's master thesis.
-How to run the codes and the data of the codes is explained in Appendix A in the master thesis. 
+This repository includes code and examples for Julia Nguyen's master thesis. The description of how to run the codes and the data of the codes is explained in Appendix A in the master thesis. 
 
-## Folder Preprocessing: 
+## Preprocessing Folder 
 The preprocessing folder includes codes for transformations of annotations for each of the models. For Yolo, the file *Final_data.ipynb* includes data augmentation, upscaling and resizing the data as well. 
 
-## Folder Birget: 
+## Birget Folder 
 The folder includes all codes for running Yolov5, RetinaNet and EfficientDet on Birget slurm controller. 
 
 The training, validation and detection python files uses the belonging training, validation and detection files of the original repositories and are meant to be used together with the bash files. The parameter run/save_run/direct in the different files, are the name of the folder where the results will be saved. This should be changed for each run of the code. 
@@ -28,6 +27,12 @@ For EfficientDet a loop with both training and validation was not implemented. T
 - *training_test.sh* and *Effdet_default.sh* are the training codes for random hyperparameter search and defaultvalues. The eight different pretrained weights are included, but only the three first was used. 
 - *validation_test.sh* is the validation file to use after the training.
 
-## Folder Exploratory data analysis: 
-- Includes codes for  plotting and analysis of the data.
+## Exploratory Data Analysis Folder 
+This folder includes code for plotting and analysis of the data. There are different jupyter notebooks for the different plots. 
+- *Data_aug_test.ipynb* is for testing different data augmentation methods on one ultrasound image.
+- *Upscale_test.ipynb* is for checking if the annotations is right after upscaling and resizing the images.
+- *Visualiza_bboxes.ipynb* visualizes the boxes, after data augmentation with annotations from Medistim and annotations after Yolo convertion. 
+- *plots.ipynb* is used for data exploration. The numbers can be found after running the *Final_data.ipynb* in the preprocessing folder for Yolo.
+- *test_of_plot.ipynb* This was used for testing plotting ground truth from Yolo labels.
+- *truth_predicted.ipynb* is the notebook used to plot the ground truth and predicted bounding boxes side by side after model evaluation. 
 
