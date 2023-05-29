@@ -18,7 +18,9 @@ For Yolo the files *Yolov5_loop_trainval.sh*, *Yolov5_defaultvalues.sh* and *Yol
 Yolo has a folder named "Other" as well. This folder contains the sligthly changed validation code for Yolov5, *val.py*,to be able to print out the metrics and use the metrics further into the training and validation loop. The folder also includes the files *request_1.yaml* and *hyp.scratch-low.yaml*. The first file is the yaml file for the Request dataset with paths to the images, labels and the number of classes with names. This files should be moved to *yolov5/data* after the original repository is cloned. The second file, is the file with the default hyperparameters used in this thesis. 
 
 ### RetinaNet
-For RetinaNet the *csv_path.ipynb* is a notebook to change the path to the images in the label csv files. This should be ran first, to make sure the labels are right. The files *RetinaNet_loop_trainval.sh* and *RetinaNet_defualt.sh* are the most important files in this folder.
+For RetinaNet the *csv_path.ipynb* is a notebook to change the path to the images in the label csv files. This should be ran first, to make sure the labels are right. The validation/evaluation code for RetinaNet has also been slightly changed to print out the values to do model selection, *evaluate.py* can be used instead of the file from the original repository. 
+
+The files *RetinaNet_loop_trainval.sh* and *RetinaNet_defualt.sh* are the most important files in this folder.
 - *RetinaNet_loop_trainval.sh* includes the loop with training, inference and validation on the validation data. 
 - *RetinaNet_defualt.sh* is the same loop but with default hyperparameters. 
 
