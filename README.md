@@ -5,7 +5,7 @@ This repository includes code and examples for Julia Nguyen's master thesis. The
 The preprocessing folder includes codes for transformations of annotations for each of the models. For Yolo, the file *Final_data.ipynb* includes data augmentation, upscaling and resizing the data as well. 
 
 ## Birget Folder 
-The folder includes all codes for running Yolov5, RetinaNet and EfficientDet on Birget slurm controller. 
+The folder includes all codes for running Yolov5, RetinaNet and EfficientDet on Birget slurm controller. *yolo_env.yml*, *ret_env.yml* and *eff_env.yml* are the conda enviroments used for each object detection model. 
 
 The training, validation and detection python files uses the belonging training, validation and detection files of the original repositories and are meant to be used together with the bash files. The parameter run/save_run/direct in the different files, are the name of the folder where the results will be saved. This should be changed for each run of the code. 
 
